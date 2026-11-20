@@ -30,7 +30,7 @@ const N=[
 N.forEach(([t,c,r])=>{const d=document.createElement('div');d.className='nt';d.style.cssText=`--n:${c};--r:${r}deg`;d.innerHTML=`${t}<i>- Disha ji 💌</i>`;$('stack').appendChild(d);io.observe(d)});
 
 // reply typing
-const T="Disha ji, aaj main 21 ka ho gaya, par sach kahun toh yeh umar nahi, yeh saal aapki wajah se special hai. Aapne jis pyaar se mujhe wish kiya, woh haath se likha letter maine kai baar padha. Aapne likha ki aap mere efforts ko notice karti hain, aur main bhi aapki har chhoti baat notice karta hoon. Mera pehla birthday aapke saath hai, aur main chahta hoon ki aise hi saare birthdays aapke saath hon. Aap mere liye bahut special hain. Thank you for being you. 💖";
+const T="Dishaaaa, its my 21st brdy, but honestly most special brdy h ye mera, yeh saal aapki wajah se special h. Like the way you wished me, I read that letter and felt that i am really blessed ki mujhe aap mile, aapse baate hue and today we are together. Aapne likha ki aap mere efforts ko notice karti h, aur m bhi aapki hr chhoti baat notice karta hu and hmesa ase hi krta rhuga. Mera pehla birthday aapke saath hai, aur m chahta hu ki aise hi saare birthdays aapke saath hon. Aap mere liye bahut special ho. Thank you for being you. 💖";
 let typed=false;
 new IntersectionObserver(async es=>{if(es[0].isIntersecting&&!typed){typed=true;await sleep(900);const e=$('rt');for(const ch of T){e.textContent+=ch;await sleep(26)}$('sig').classList.add('on');confetti(innerWidth/2,innerHeight*.8,50)}},{threshold:.5}).observe($('reply'));
 
